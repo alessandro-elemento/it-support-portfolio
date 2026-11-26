@@ -15,7 +15,7 @@ what I did not test.
 | # | Project | Skills | Status |
 |---|---|---|---|
 | 05 | [Service desk tickets](templates/) | Ticket documentation, prioritisation, escalation, resolution | Template and priority matrix written |
-| 01 | [Windows troubleshooting](01-windows-troubleshooting/) | Event Viewer, Task Manager, Windows services, application failures | 1 ticket done (IT-001, Print Spooler); 3 scenarios still planned |
+| 01 | [Windows troubleshooting](01-windows-troubleshooting/) | Event Viewer, Task Manager, Windows services, application failures | 2 tickets done (IT-001 Print Spooler, IT-002 runaway process); 2 scenarios still planned |
 | 02 | Network troubleshooting | DNS, DHCP, IP configuration, `ping`, `ipconfig`, `nslookup` | Not started |
 | 04 | User onboarding | Windows user accounts, permissions, workstation setup | Not started |
 | 03 | Microsoft 365 support | Outlook, Teams, OneDrive troubleshooting | Not started (needs a tenant to practise on) |
@@ -47,5 +47,6 @@ it-support-portfolio/
     ├── README.md
     └── tickets/
         ├── IT-001-print-spooler-stopped.md
-        └── screenshots/IT-001/
+        ├── IT-002-runaway-process-high-cpu.md
+        └── screenshots/IT-001/, IT-002/
 ```

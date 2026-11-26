@@ -5,7 +5,7 @@ Task Manager and the Services console. I create each fault on purpose in my isol
 (Windows 11), diagnose it as if a user had reported it, fix it, and write it up as a ticket
 using the [ticket template](../templates/ticket-template.md).
 
-**Status:** scenario A done (IT-001). Scenarios B, C and D are planned. Each ticket in
+**Status:** scenarios A and B done (IT-001, IT-002). Scenarios C and D are planned. Each ticket in
 [`tickets/`](tickets/) should only be added once I have done the work and recorded what I
 actually saw. Do not fill a ticket in from expectations.
 
@@ -25,8 +25,9 @@ actually saw. Do not fill a ticket in from expectations.
 ### Scenario B: a runaway process is making the computer slow
 
 - **User report to write up:** "My computer has gone really slow and the fan is loud."
-- **How to create the fault:** run a CPU-heavy loop in PowerShell, for example
-  `while ($true) { }`, and leave it running.
+- **How to create the fault:** run a CPU-heavy loop in PowerShell. Use one that stops itself,
+  for example `$end = (Get-Date).AddSeconds(180); while ((Get-Date) -lt $end) { }`. My first
+  attempt used `while ($true) { }` and froze the lab VM (see IT-002).
 - **What to practise:** open Task Manager, sort by CPU, identify the process and its path on
   the Details tab, check who started it, end the process, and confirm CPU returns to normal.
 - **Things to record:** CPU percentage before and after, the process name and user.
@@ -66,5 +67,6 @@ actually saw. Do not fill a ticket in from expectations.
 | Ticket | Scenario | Priority | Status |
 |---|---|---|---|
 | [IT-001](tickets/IT-001-print-spooler-stopped.md) | A: Print Spooler disabled, cannot print | P3 | Resolved |
+| [IT-002](tickets/IT-002-runaway-process-high-cpu.md) | B: PowerShell loop using CPU, slow computer | P3 | Resolved |
 
 File names follow the pattern `IT-001-short-title.md`.
