@@ -5,7 +5,7 @@ Task Manager and the Services console. I create each fault on purpose in my isol
 (Windows 11), diagnose it as if a user had reported it, fix it, and write it up as a ticket
 using the [ticket template](../templates/ticket-template.md).
 
-**Status:** scenarios planned. No tickets have been completed yet. Each ticket in
+**Status:** scenario A done (IT-001). Scenarios B, C and D are planned. Each ticket in
 [`tickets/`](tickets/) should only be added once I have done the work and recorded what I
 actually saw. Do not fill a ticket in from expectations.
 
@@ -63,4 +63,8 @@ actually saw. Do not fill a ticket in from expectations.
 
 ## Tickets
 
-None yet. File names follow the pattern `IT-001-short-title.md`.
+| Ticket | Scenario | Priority | Status |
+|---|---|---|---|
+| [IT-001](tickets/IT-001-print-spooler-stopped.md) | A: Print Spooler disabled, cannot print | P3 | Resolved |
+
+File names follow the pattern `IT-001-short-title.md`.

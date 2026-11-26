@@ -15,7 +15,7 @@ what I did not test.
 | # | Project | Skills | Status |
 |---|---|---|---|
 | 05 | [Service desk tickets](templates/) | Ticket documentation, prioritisation, escalation, resolution | Template and priority matrix written |
-| 01 | [Windows troubleshooting](01-windows-troubleshooting/) | Event Viewer, Task Manager, Windows services, application failures | Scenarios planned, no tickets completed yet |
+| 01 | [Windows troubleshooting](01-windows-troubleshooting/) | Event Viewer, Task Manager, Windows services, application failures | 1 ticket done (IT-001, Print Spooler); 3 scenarios still planned |
 | 02 | Network troubleshooting | DNS, DHCP, IP configuration, `ping`, `ipconfig`, `nslookup` | Not started |
 | 04 | User onboarding | Windows user accounts, permissions, workstation setup | Not started |
 | 03 | Microsoft 365 support | Outlook, Teams, OneDrive troubleshooting | Not started (needs a tenant to practise on) |
@@ -46,4 +46,6 @@ it-support-portfolio/
 └── 01-windows-troubleshooting/
     ├── README.md
     └── tickets/
+        ├── IT-001-print-spooler-stopped.md
+        └── screenshots/IT-001/
 ```
