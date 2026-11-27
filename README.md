@@ -16,7 +16,7 @@ what I did not test.
 |---|---|---|---|
 | 05 | [Service desk tickets](templates/) | Ticket documentation, prioritisation, escalation, resolution | Template and priority matrix written |
 | 01 | [Windows troubleshooting](01-windows-troubleshooting/) | Event Viewer, Task Manager, Windows services, application failures | 2 tickets done (IT-001 Print Spooler, IT-002 runaway process); 2 scenarios still planned |
-| 02 | Network troubleshooting | DNS, DHCP, IP configuration, `ping`, `ipconfig`, `nslookup` | Not started |
+| 02 | [Network troubleshooting](02-network-troubleshooting/) | DNS, DHCP, IP configuration, `ping`, `ipconfig`, `nslookup` | 1 ticket done (IT-003, DNS); 2 scenarios still planned |
 | 04 | User onboarding | Windows user accounts, permissions, workstation setup | Not started |
 | 03 | Microsoft 365 support | Outlook, Teams, OneDrive troubleshooting | Not started (needs a tenant to practise on) |
 
@@ -43,10 +43,15 @@ it-support-portfolio/
 ├── templates/
 │   ├── ticket-template.md
 │   └── priority-matrix.md
-└── 01-windows-troubleshooting/
+├── 01-windows-troubleshooting/
+│   ├── README.md
+│   └── tickets/
+│       ├── IT-001-print-spooler-stopped.md
+│       ├── IT-002-runaway-process-high-cpu.md
+│       └── screenshots/IT-001/, IT-002/
+└── 02-network-troubleshooting/
     ├── README.md
     └── tickets/
-        ├── IT-001-print-spooler-stopped.md
-        ├── IT-002-runaway-process-high-cpu.md
-        └── screenshots/IT-001/, IT-002/
+        ├── IT-003-websites-wont-load-dns-blocked.md
+        └── screenshots/IT-003/
 ```

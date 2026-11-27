@@ -28,9 +28,10 @@ PowerShell. I tried it twice:
 2. **Attempt 2 (about 4:58 PM):** `$end = (Get-Date).AddSeconds(180); while ((Get-Date) -lt $end) { }`,
    a loop that stops itself after 3 minutes, so it could not leave the VM stuck again.
 
-The PowerShell prompt showed `C:\WINDOWS\system32` in both attempts, which is where an
-administrator session normally opens. I did not check, so I think both were elevated but I am
-not certain.
+The PowerShell window was titled "Windows PowerShell" in both attempts. When I later opened a
+genuinely elevated window (for IT-003) its title read "Administrator: Windows PowerShell", so these
+sessions were probably not elevated. The prompt showed `C:\WINDOWS\system32` in both, which is not a
+reliable sign of elevation. I did not check directly.
 
 ## Summary
 
@@ -131,7 +132,7 @@ test any of those checks here.
 - I did not capture the **Command line** column or the file location of the process, so I cannot
   say how it was launched. I also did not check its parent process. System Informer is installed on
   the VM and would show that, but I did not use it.
-- Whether the sessions were elevated is inferred from the prompt path, not confirmed.
+- Whether the sessions were elevated was not checked directly (see the lab disclosure).
 - The exact time I ended the process is only known to within the screenshot times (5:00:21 to 5:00:55 PM).
 - The drop from 139 to 133 processes is more than the one process I ended, and I do not know why.
 - The CPU after reading is a single point on a falling graph.
